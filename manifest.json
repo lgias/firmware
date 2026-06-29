@@ -2,12 +2,12 @@
   "schema": 1,
   "firmware": {
     "consumer": {
-      "version": "v0.9.4-ota2",
-      "built": 1782719621,
+      "version": "v0.9.5",
+      "built": 1782751982,
       "url": "consumer.wpb",
-      "size": 819230,
-      "sha256": "5154a2bb18764cdf203969d990c25aa36b7598bc814f108805d324e4d6d34128",
-      "notes": "Fixes firmware updates that could fail right after the transfer starts."
+      "size": 819118,
+      "sha256": "abf38b10dcf987a54fa6fe90e7c01f9913027f6683726faeca098f181049482a",
+      "notes": "Improves firmware update reliability at the start of the transfer."
     }
   }
 }
