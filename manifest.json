@@ -2,8 +2,8 @@
   "schema": 1,
   "firmware": {
     "consumer": {
-      "version": "v0.9.5",
-      "built": 1782751982,
+      "version": "v0.9.5-force1",
+      "built": 1782751983,
       "url": "consumer.wpb",
       "size": 819118,
       "sha256": "abf38b10dcf987a54fa6fe90e7c01f9913027f6683726faeca098f181049482a",
