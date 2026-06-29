@@ -4,5 +4,5 @@ You can download the firmware files manually, but they are meant to be downloade
 
 Variants:
  * [Consumer (C) Board](consumer.wpb)
- * Muultipool (M) Board
+ * Multipool (M) Board
  * Referee (R) Board
