@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "firmware": {
+    "consumer": {
+      "version": "v0.9.0-citest",
+      "built": 1782708473,
+      "url": "consumer.wpb",
+      "size": 819061,
+      "sha256": "9a9659a132c58366928571e112a6893276ae6ea92df8403278a60def92313771",
+      "notes": "ci: trigger firmware publish on per-variant tags\n\nReplace the release-published trigger with push tags ['consumer-v*']. The variant and version are derived from the tag (consumer-v0.9.0 -\u003e -target consumer -version v0.9.0), the manifest notes come from the annotated tag message, and the job publishes ${type}.wpb plus the variant's manifest entry. Firmware variants version independently on their own tag lines; this does not use a repo-wide version. Add referee-v*/pro-v* when those mkimage targets exist."
+    }
+  }
+}
