@@ -2,7 +2,7 @@
   "schema": 1,
   "firmware": {
     "consumer": {
-      "version": "v0.9.1",
+      "version": "v0.9.1-citest1",
       "built": 1782710758,
       "url": "consumer.wpb",
       "size": 819054,
