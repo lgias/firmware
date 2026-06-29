@@ -2,12 +2,12 @@
   "schema": 1,
   "firmware": {
     "consumer": {
-      "version": "v0.9.0-citest",
-      "built": 1782708473,
+      "version": "v0.9.1",
+      "built": 1782710758,
       "url": "consumer.wpb",
-      "size": 819061,
-      "sha256": "9a9659a132c58366928571e112a6893276ae6ea92df8403278a60def92313771",
-      "notes": "ci: trigger firmware publish on per-variant tags\n\nReplace the release-published trigger with push tags ['consumer-v*']. The variant and version are derived from the tag (consumer-v0.9.0 -\u003e -target consumer -version v0.9.0), the manifest notes come from the annotated tag message, and the job publishes ${type}.wpb plus the variant's manifest entry. Firmware variants version independently on their own tag lines; this does not use a repo-wide version. Add referee-v*/pro-v* when those mkimage targets exist."
+      "size": 819054,
+      "sha256": "e19b78ed80f9427f526d85f5d22b070a34870a8d71f967897844b20fe56907c6",
+      "notes": "firmware: post a single OTA rx buffer to match NimBLE's CoC model\n\nThe backpressure change (5eaaf21) posted up to OTA_RX_WINDOW (=4) rx SDU buffers, but NimBLE's CoC keeps a single rx SDU buffer per channel unless BLE_L2CAP_COC_SDU_BUFF_COUNT \u003e 1 (default 1). With the default, a second ble_l2cap_recv_ready while one is pending overwrites the slot and leaks the previous mbuf (the ring-full EBUSY guard is skipped when the count is 1), so every transfer leaked pool buffers and corrupted the credit/SDU accounting, making OTA intermittently drop ('broken pipe').\n\nSet OTA_RX_WINDOW to 1: post exactly one rx buffer, re-posted only while the stream buffer has room. The room-gate is the backpressure (it also prevents the original overflow, since a credit is granted only when the in-flight SDU is guaranteed to fit), without the multi-post NimBLE cannot honor."
     }
   }
 }
