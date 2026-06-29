@@ -2,12 +2,12 @@
   "schema": 1,
   "firmware": {
     "consumer": {
-      "version": "v0.9.1-citest1",
-      "built": 17827107581,
+      "version": "v0.9.2",
+      "built": 1782714763,
       "url": "consumer.wpb",
-      "size": 819054,
-      "sha256": "e19b78ed80f9427f526d85f5d22b070a34870a8d71f967897844b20fe56907c6",
-      "notes": "firmware: post a single OTA rx buffer to match NimBLE's CoC model\n\nThe backpressure change (5eaaf21) posted up to OTA_RX_WINDOW (=4) rx SDU buffers, but NimBLE's CoC keeps a single rx SDU buffer per channel unless BLE_L2CAP_COC_SDU_BUFF_COUNT \u003e 1 (default 1). With the default, a second ble_l2cap_recv_ready while one is pending overwrites the slot and leaks the previous mbuf (the ring-full EBUSY guard is skipped when the count is 1), so every transfer leaked pool buffers and corrupted the credit/SDU accounting, making OTA intermittently drop ('broken pipe').\n\nSet OTA_RX_WINDOW to 1: post exactly one rx buffer, re-posted only while the stream buffer has room. The room-gate is the backpressure (it also prevents the original overflow, since a credit is granted only when the in-flight SDU is guaranteed to fit), without the multi-post NimBLE cannot honor."
+      "size": 818862,
+      "sha256": "bd0ebd891336b52bb3e40439e0f71911a5936a66163d60b4ca09dd5a0e2b2d4f",
+      "notes": "Fixes a firmware update failure that could interrupt the transfer and force a retry."
     }
   }
 }
