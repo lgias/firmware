@@ -2,12 +2,12 @@
   "schema": 1,
   "firmware": {
     "consumer": {
-      "version": "v0.9.6-force",
-      "built": 17827728188,
+      "version": "v0.9.7",
+      "built": 1782775575,
       "url": "consumer.wpb",
-      "size": 819406,
-      "sha256": "fd3e6784f77bfb24dcd781c2d4553caebf10f6c96a49a243e8d5820493659faa",
-      "notes": "Fixes an issue where a firmware update could fail partway through the transfer."
+      "size": 819662,
+      "sha256": "8be8282d5c114883eeb54f79c58494b93fe8a7d94bc6560b962130d21ca845a7",
+      "notes": "Fixes a dropped connection that could interrupt a firmware update."
     }
   }
 }
