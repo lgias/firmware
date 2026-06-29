@@ -2,8 +2,8 @@
   "schema": 1,
   "firmware": {
     "consumer": {
-      "version": "v0.9.4-ota1",
-      "built": 1782719620,
+      "version": "v0.9.4-ota2",
+      "built": 1782719621,
       "url": "consumer.wpb",
       "size": 819230,
       "sha256": "5154a2bb18764cdf203969d990c25aa36b7598bc814f108805d324e4d6d34128",
