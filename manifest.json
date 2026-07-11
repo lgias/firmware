@@ -2,12 +2,12 @@
   "schema": 1,
   "firmware": {
     "consumer": {
-      "version": "v0.9.8",
-      "built": 1783730118,
+      "version": "v0.9.9",
+      "built": 1783736181,
       "url": "consumer.wpb",
-      "size": 846382,
-      "sha256": "f17b535d9e57a91e443ae77a7e69b622eb7f0810175b471d0d44df641f3bd40b",
-      "notes": "App-driven scoreboard discovery and Personal-board streaming. Keyless firmware with unencrypted OTA."
+      "size": 846446,
+      "sha256": "9af9d7e676bf6c06a2b8ea49146d5a9e036bcdea22f8556b40ece949a1427ed1",
+      "notes": "Reports device uptime so the app can confirm firmware updates reliably."
     }
   }
 }
