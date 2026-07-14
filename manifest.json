@@ -2,12 +2,12 @@
   "schema": 1,
   "firmware": {
     "consumer": {
-      "version": "v0.9.9",
-      "built": 1783736182,
+      "version": "v0.9.10",
+      "built": 1783992547,
       "url": "consumer.wpb",
-      "size": 846446,
-      "sha256": "9af9d7e676bf6c06a2b8ea49146d5a9e036bcdea22f8556b40ece949a1427ed1",
-      "notes": "Reports device uptime so the app can confirm firmware updates reliably."
+      "size": 846447,
+      "sha256": "aae10e32836fc72a05aefafb2aedb5a4e28b0cf1ab442b37753059bedac88b7f",
+      "notes": "Your board now receives the CTS WHC-1 handheld controller."
     }
   }
 }
