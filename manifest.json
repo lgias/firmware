@@ -2,12 +2,12 @@
   "schema": 1,
   "firmware": {
     "consumer": {
-      "version": "v0.9.12",
-      "built": 1783999617,
+      "version": "v0.9.13",
+      "built": 1784078463,
       "url": "consumer.wpb",
-      "size": 846431,
-      "sha256": "bb40d04f09962bbdcc6a75f92fca1bbf075e10e3b03369ec11ae147ef77687d5",
-      "notes": "Holds the WHC-1 handheld signal steady through its quiet spells instead of briefly dropping to signal lost."
+      "size": 849855,
+      "sha256": "a7726c28261732c9c1809ae508e27ab2a896e89f0a34a20f4e664ffb91e825d5",
+      "notes": "Clearer board status lights: signal, setup scanning, connection, and firmware-update states now follow one consistent color scheme (magenta while updating, red for a lost signal). Adds board-side support for configuring the LED layout, used by a later app update."
     }
   }
 }
