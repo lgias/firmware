@@ -2,12 +2,12 @@
   "schema": 1,
   "firmware": {
     "consumer": {
-      "version": "v0.9.13",
-      "built": 1784078463,
+      "version": "v0.9.14",
+      "built": 1784082849,
       "url": "consumer.wpb",
-      "size": 849855,
-      "sha256": "a7726c28261732c9c1809ae508e27ab2a896e89f0a34a20f4e664ffb91e825d5",
-      "notes": "Clearer board status lights: signal, setup scanning, connection, and firmware-update states now follow one consistent color scheme (magenta while updating, red for a lost signal). Adds board-side support for configuring the LED layout, used by a later app update."
+      "size": 850063,
+      "sha256": "ac4aa4c7b49d8f35c96b61fc8b9c60ed75360c0269c227fbe62cb466f83fb2c8",
+      "notes": "Applying a new LED layout, or turning the LEDs off, now clears the previous LEDs instead of leaving them lit. Groundwork for the in-app LED configuration coming in a later app update."
     }
   }
 }
