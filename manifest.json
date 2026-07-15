@@ -2,12 +2,12 @@
   "schema": 1,
   "firmware": {
     "consumer": {
-      "version": "v0.9.14",
-      "built": 1784082849,
+      "version": "v0.10.0",
+      "built": 1784086271,
       "url": "consumer.wpb",
-      "size": 850063,
-      "sha256": "ac4aa4c7b49d8f35c96b61fc8b9c60ed75360c0269c227fbe62cb466f83fb2c8",
-      "notes": "Applying a new LED layout, or turning the LEDs off, now clears the previous LEDs instead of leaving them lit. Groundwork for the in-app LED configuration coming in a later app update."
+      "size": 841391,
+      "sha256": "b50f1e3d5facf379c1d4aca66ca5efca4bb60561c405031ca1e54401f8c6845c",
+      "notes": "Maintenance release. No change to scoreboard behavior; this refreshes the firmware on a stable, pinned build."
     }
   }
 }
