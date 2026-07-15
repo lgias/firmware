@@ -2,12 +2,12 @@
   "schema": 1,
   "firmware": {
     "consumer": {
-      "version": "v0.10.0",
-      "built": 1784086271,
+      "version": "v0.10.1",
+      "built": 1784107004,
       "url": "consumer.wpb",
       "size": 841391,
-      "sha256": "b50f1e3d5facf379c1d4aca66ca5efca4bb60561c405031ca1e54401f8c6845c",
-      "notes": "Maintenance release. No change to scoreboard behavior; this refreshes the firmware on a stable, pinned build."
+      "sha256": "b299da2565f9821cfe5a2204ac64ce68bd1e9c3e4988c4ba0594bb7a389ed728",
+      "notes": "Maintenance release. No change to scoreboard behavior."
     }
   }
 }
