@@ -1,8 +1,7 @@
-This page contains firmware releases for wpboard hardware.
+# Water Polo Board Firmware
 
-You can download the firmware files manually, but they are meant to be downloaded and installed directly from the app.
+Published firmware releases for Water Polo Board hardware, served at
+[firmware.lgias.com](https://firmware.lgias.com).
 
-Variants:
- * [Consumer (C) Board](consumer.wpb)
- * Multipool (M) Board
- * Referee (R) Board
+The `.wpb`, `.bin`, and `manifest.json` files here are written automatically on
+each release; do not edit them by hand.
