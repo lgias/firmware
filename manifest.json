@@ -2,12 +2,12 @@
   "schema": 1,
   "firmware": {
     "consumer": {
-      "version": "v0.11.1",
-      "built": 1784263846,
+      "version": "v0.11.2",
+      "built": 1784271087,
       "url": "consumer.wpb",
-      "size": 841791,
-      "sha256": "a1670183cdc5c01227cb917bb19dd10800af74ff5ddf2763550cbacce7917da1",
-      "notes": "Fixes a bug where setting the PIN to 000000 silently disabled it, leaving the board unprotected while reporting success. If you set 000000 as your PIN, set a new one after updating."
+      "size": 841935,
+      "sha256": "d2f9f6726d8414b9327ef39dd2a764fd2b1d2618fc92615b3675067a7f1d460f",
+      "notes": "Firmware updates now only accept data from the phone that started the update."
     }
   }
 }
