@@ -2,12 +2,12 @@
   "schema": 1,
   "firmware": {
     "consumer": {
-      "version": "v0.11.2",
-      "built": 1784271087,
+      "version": "v1.0.0",
+      "built": 1784788401,
       "url": "consumer.wpb",
-      "size": 841935,
-      "sha256": "d2f9f6726d8414b9327ef39dd2a764fd2b1d2618fc92615b3675067a7f1d460f",
-      "notes": "Firmware updates now only accept data from the phone that started the update."
+      "size": 841934,
+      "sha256": "7b8863ff4cdcb90be4b0e31601d38d9f6d1b7d92a9d8c79cae68ce55f21eb0d2",
+      "notes": "First public release. Your board listens to the pool scoreboard's wireless signal and sends the game clock, shot clock, score, and period live to the Water Polo Camera app over Bluetooth."
     }
   }
 }
